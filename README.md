@@ -1,5 +1,5 @@
 # lab-sales
-This repo contains Vue Front End App and Spring Boot Backend App
+This repo contains Vue Front End App.
 
 The App has 3 Modules
 
