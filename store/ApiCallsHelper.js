@@ -91,5 +91,6 @@ export const actions = {
       .finally(() => {
         commit("TOGGLE_LOADING");
       });
+      
   }
 };
