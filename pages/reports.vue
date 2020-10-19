@@ -78,17 +78,19 @@
         </v-row>
 
         <v-row>
-          <v-col cols="4">
+          <v-col cols="5">
             <v-card class="mx-auto" max-width="434">
               <v-list-item two-line>
                 <v-list-item-content>
                   <v-list-item-title class="headline">
-                    Total Profits
+                    Total Profits - (Top 5 Items)
                   </v-list-item-title>
                   <v-divider></v-divider>
                   <v-card-text align="center">
-                    <v-row align="right">
-                      <v-col class="display-2" cols="12"> {{salesResponse.totalProfit}}</v-col>
+                    <v-row>
+                      <v-col class="display-2" cols="12">
+                        {{ formatPrice(salesResponse.totalProfit) }}</v-col
+                      >
                     </v-row>
                   </v-card-text>
                 </v-list-item-content>
@@ -97,6 +99,9 @@
           </v-col>
 
           <v-col cols="12">
+            <div>
+              <p class="text-uppercase">Top 5 Profitable Items</p>
+            </div>
             <v-data-table
               :headers="headers"
               :items="salesResponse.itemsObjs"
@@ -140,8 +145,10 @@ export default {
   }),
 
   methods: {
-
-    async getSales() {},
+    formatPrice(value) {
+      let val = (value / 1).toFixed(2).replace(",", ".");
+      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    },
 
     async getReports() {
       let formdata = new FormData();

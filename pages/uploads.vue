@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>
-      
       <p class="text-uppercase">Upload CSV File</p>
     </div>
     <v-overlay :value="loading">
@@ -25,7 +24,11 @@
  
  <br/>
     <v-row>
+        
       <v-col cols="12">
+         <div>
+            <p class="text-uppercase">Display for First 5000 Records</p>
+          </div>
         <v-data-table
           :headers="headers"
           :items="records"

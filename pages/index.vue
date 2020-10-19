@@ -64,7 +64,7 @@
             <v-divider></v-divider>
             <v-card-text align="center">
               <v-row>
-                <v-col class="display-1" cols="12">{{ returnTotal }} </v-col>
+                <v-col class="display-1" cols="12">{{ formatPrice(returnTotal) }} </v-col>
               </v-row>
             </v-card-text>
           </v-list-item-content>
@@ -86,6 +86,11 @@ export default {
     async getAnalytics() {
       await this.$store.dispatch("ApiCallsHelper/getAnalytics");
     },
+
+    formatPrice(value) {
+        let val = (value/1).toFixed(2).replace(',', '.')
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    }
   },
 
   computed: {
