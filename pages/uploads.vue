@@ -21,7 +21,6 @@
       </v-col>
       <v-col cols="4" class="pl-2"> </v-col>
     </v-row>                
- 
  <br/>
     <v-row>
         
