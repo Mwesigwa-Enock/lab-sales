@@ -79,9 +79,9 @@
 
         <v-row>
           <v-col cols="5">
-            <v-card class="mx-auto" max-width="434">
+            <v-card class="mx-auto" max-width="434" style="background:#38c79a;">
               <v-list-item two-line>
-                <v-list-item-content>
+                <v-list-item-content style="color:white">
                   <v-list-item-title class="headline">
                     Total Profits - (Top 5 Items)
                   </v-list-item-title>

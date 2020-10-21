@@ -1,9 +1,9 @@
 <template>
   <v-row>
     <v-col cols="4">
-      <v-card class="mx-auto" max-width="434">
+      <v-card class="mx-auto" max-width="434" style="background:#ee1143;">
         <v-list-item two-line>
-          <v-list-item-content>
+          <v-list-item-content style="color:white">
             <v-list-item-title class="headline"> Countries </v-list-item-title>
             <v-divider></v-divider>
             <v-card-text align="center">
@@ -19,9 +19,9 @@
     </v-col>
 
     <v-col cols="4">
-      <v-card class="mx-auto" max-width="434">
+      <v-card class="mx-auto" max-width="434" style="background:#a72bd4;">
         <v-list-item two-line>
-          <v-list-item-content>
+          <v-list-item-content style="color:white">
             <v-list-item-title class="headline"> Item Types </v-list-item-title>
             <v-divider></v-divider>
             <v-card-text align="center">
@@ -37,9 +37,9 @@
     </v-col>
 
     <v-col cols="4">
-      <v-card class="mx-auto" max-width="434">
+      <v-card class="mx-auto" max-width="434" style="background:#dd8322;">
         <v-list-item two-line>
-          <v-list-item-content>
+          <v-list-item-content style="color:white">
             <v-list-item-title class="headline"> Regions </v-list-item-title>
             <v-divider></v-divider>
             <v-card-text align="center">
@@ -55,9 +55,9 @@
     </v-col>
 
     <v-col cols="4">
-      <v-card class="mx-auto" max-width="434">
+      <v-card class="mx-auto" max-width="434" style="background:#38c79a;">
         <v-list-item two-line>
-          <v-list-item-content>
+          <v-list-item-content style="color:white">
             <v-list-item-title class="headline">
               Total Profits
             </v-list-item-title>
